@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeMail</title>
+    <link rel="stylesheet" href="/static/css/home.css"
+</head>
+<body>
+    <div class="wrapper">
+
+        <form action="/new" method="POST">
+            <button class="new">GET new email adders</button>
+        </form>
+
+   
+        <form action="/reload/{{date.data.email}}" method="GET">
+            <button class="Relod">Reload</button>
+        </form>
+
+        <textarea class="inp" id="email">{{date.data.email}}</textarea>
+        <textarea class="inbox" id="inbox">
+{{inbox.data.inbox}}
+        </textarea>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 
+
